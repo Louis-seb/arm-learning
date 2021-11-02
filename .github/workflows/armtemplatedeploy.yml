@@ -3,7 +3,7 @@
 name: armTemplateDeployment
 
 on:
-
+  
   workflow_dispatch:
 
 jobs:
@@ -17,3 +17,9 @@ jobs:
         uses: Azure/Login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      - name: Deploy Resource Group gr-githubactions with AZ CLI
+        uses: Azure/cli@1.0.4
+        whith:
+          inlinescrcipt: |
+            az deployment sub create -- location "Canada Central" --template-file ./arm-templates/resourcegroup.json
