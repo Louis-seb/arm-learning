@@ -22,4 +22,4 @@ jobs:
         uses: Azure/cli@1.0.4
         with:
           inlinescript: |
-            az deployment sub create -- location "Canada Central" --template-file ./arm/resourcegroup.json
+            az deployment sub create --location "Canada Central" --template-file ./arm/resourcegroup.json
