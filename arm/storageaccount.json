@@ -30,7 +30,7 @@
         "type": "Microsoft.Storage/storageAccounts",
         "name": "[variables('storageAccountName')]",
         "location": "[parameters('location')]",
-        "apiVersion": "2018-05-01",
+        "apiVersion": "2019-04-01",
         "kind": "StorageV2",
         "properties": {}
     }],
