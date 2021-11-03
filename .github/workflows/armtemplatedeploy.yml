@@ -17,7 +17,17 @@ jobs:
         uses: Azure/Login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS_LOUIS_SEB }}
-          
+
+      - name: Deploy Resource Group rg-githubactions
+        uses: Azure/arm-deploy@v1
+        with: 
+          scope: subscription
+          subsctiptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
+          region: Canada Central
+          template: ./arm/templates/resourcegroup.json
+          deploymentName: rg-githubactions
+        
+      
       - name: Deploy Resource Group gr-githubactions with AZ CLI
         uses: Azure/cli@1.0.4
         with:
