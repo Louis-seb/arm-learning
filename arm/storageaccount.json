@@ -32,8 +32,10 @@
         "location": "[parameters('location')]",
         "apiVersion": "2019-04-01",
         "kind": "StorageV2",
-        "properties": {}
-    }],
+        "sku": {
+            "name": "Standard_LRS",
+            "tier": "Standard"
+        },],
     "outputs": {
     }
 }
