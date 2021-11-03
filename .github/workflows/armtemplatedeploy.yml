@@ -37,5 +37,15 @@ jobs:
           subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
           template: ./arm/storageaccount.json
           deploymentMode: incremental
-      
+          
+      - name: Deploy Virutal machine
+        uses: Azure/arm-deploy@v1
+        with: 
+          scope: resourcegroup
+          resourceGroupName: rg-githubactions
+          subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
+          template: ./arm/virtualMachine.json
+          parameters:
+            adminPassword="Patate$$"
+          deploymentMode: incremental      
           
