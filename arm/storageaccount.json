@@ -34,9 +34,8 @@
         "kind": "StorageV2",
         "sku": {
             "name": "Standard_LRS",
-            "tier": "Standard"
-        }
-    ],
+            "tier": "Standard"}
+        }],
     "outputs": {
     }
 }
