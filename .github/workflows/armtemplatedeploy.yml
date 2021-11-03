@@ -32,11 +32,14 @@ jobs:
       - name: Deploy Storage Account
         uses: Azure/arm-deploy@v1
         with: 
-          scope: reosourcegroup
+          scope: resourcegroup
           resourceGroupName: rg-githubactions
           subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
-          template: ./arm/templates/storageaccount.json
-          parameters: ./arm/templates/storageaccount.parameters.=.json
+          template: ./arm/storageaccount.json
+          parameters: 
+            sku=Standar_LRS
+            storageAccountName=Globostg001
+            location="Canada Central"
           deploymentMode: incremental
       
           
