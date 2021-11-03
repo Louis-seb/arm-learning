@@ -24,7 +24,7 @@ jobs:
         uses: Azure/arm-deploy@v1
         with: 
           scope: subscription
-          subsctiptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
+          subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
           region: Canada Central
           template: ./arm/resourcegroup.json
           deploymentName: rg-githubactions
@@ -34,7 +34,7 @@ jobs:
         with: 
           scope: reosourcegroup
           resourceGroupName: rg-githubactions
-          subsctiptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
+          subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
           template: ./arm/templates/storageaccount.json
           parameters: ./arm/templates/storageaccount.parameters.=.json
           deploymentMode: incremental
