@@ -32,7 +32,6 @@
         "location": "[parameters('location')]",
         "apiVersion": "2018-05-01",
         "kind": "StorageV2",
-        "sku": "[parameters('storageAccountType')]",
         "properties": {}
     }],
     "outputs": {
