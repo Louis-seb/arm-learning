@@ -16,7 +16,7 @@ jobs:
       - name: Azure Login
         uses: Azure/Login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS_LOUIS_SEB }}
           
       - name: Deploy Resource Group gr-githubactions with AZ CLI
         uses: Azure/cli@1.0.4
