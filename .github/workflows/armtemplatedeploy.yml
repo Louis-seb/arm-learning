@@ -20,11 +20,6 @@ jobs:
           
       - uses: actions/checkout@v2          
 
-      - name: Deploy Resource Group gr-githubactions with AZ CLI
-        uses: Azure/cli@1.0.4
-        with:
-          inlinescript: az deployment sub create --location "Canada Central" --template-file ./arm/resourcegroup.json
-
       - name: Deploy Resource Group rg-githubactions
         uses: Azure/arm-deploy@v1
         with: 
