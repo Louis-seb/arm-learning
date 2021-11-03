@@ -31,9 +31,6 @@
         "name": "[variables('storageAccountName')]",
         "location": "[parameters('location')]",
         "apiVersion": "2018-07-01",
-        "sku": {
-            "name": "[parameters('storageAccountType')]"
-        },
         "kind": "StorageV2",
         "properties": {}
     }],
