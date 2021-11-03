@@ -24,7 +24,7 @@ jobs:
           scope: subscription
           subsctiptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
           region: Canada Central
-          template: ./arm/templates/resourcegroup.json
+          template: ./arm/resourcegroup.json
           deploymentName: rg-githubactions
       
       - name: Deploy Storage Account
