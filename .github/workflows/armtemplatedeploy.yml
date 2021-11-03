@@ -11,12 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+
 
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS_LOUIS_SEB }}
+          
+      - uses: actions/checkout@v2          
 
       - name: Deploy Resource Group gr-githubactions with AZ CLI
         uses: Azure/cli@1.0.4
