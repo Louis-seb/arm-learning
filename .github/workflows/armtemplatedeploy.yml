@@ -44,7 +44,7 @@ jobs:
           scope: resourcegroup
           resourceGroupName: rg-githubactions
           subscriptionId: 61f2b5ea-ab46-4ef9-b648-d3846fd69521 
-          template: ./arm/virtualMachine.json
+          template: ./arm/virtualmachine.json
           parameters:
             adminPassword="Patate$$"
           deploymentMode: incremental      
