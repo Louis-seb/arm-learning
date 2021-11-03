@@ -21,7 +21,6 @@ jobs:
       - name: Deploy Resource Group gr-githubactions with AZ CLI
         uses: Azure/cli@1.0.4
         with:
-          azcliversion: 2.0.72 
           inlinescript: az deployment sub create --location "Canada Central" --template-file ./arm/resourcegroup.json
 
       - name: Deploy Resource Group rg-githubactions
