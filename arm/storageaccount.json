@@ -35,5 +35,6 @@
         "sku": "[parameters('storageAccountType')]",
         "properties": {}
     }],
-    "outputs": {}
+    "outputs": {
+    }
 }
